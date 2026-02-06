@@ -1,0 +1,28 @@
+window-rule {
+  geometry-corner-radius 5 // Set every window radius to 20
+  clip-to-geometry true
+}
+layer-rule {
+  match namespace="^noctalia-wallpaper*"
+  place-within-backdrop true
+}
+// Focused Nemo
+window-rule {
+    match app-id=r#"^nemo$"#
+    opacity 0.90
+}
+// Unfocused Nemo (Dimmed)
+window-rule {
+    match app-id=r#"^nemo$"# is-focused=false
+    opacity 0.90
+}
+// Focused Ghostty
+window-rule {
+    match app-id=r#"^com\.mitchellh\.ghostty$"#
+    opacity 0.90
+}
+// Unfocused Ghostty (Dimmed)
+window-rule {
+    match app-id=r#"^com\.mitchellh\.ghostty$"# is-focused=false
+    opacity 0.90
+}
