@@ -1,0 +1,131 @@
+
+{
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+"logo": {
+"source": "/home/pragesh220/.config/fastfetch/ascii/spider.txt", // Options: "cachyos", "arch", "linux", or path to a .txt file| for custom image ko lagi: "source": "/path/to/image.png" !image chai png hunu parxa
+//"width": 30,
+        "padding": {
+            "top": 1,
+            "left": 2
+},
+"color": {
+            "1": "#b4befe"   // Primary logo color
+    }
+},
+"display": {
+"separator": " 󰑃  "
+},
+"modules": [
+    "break",
+    {
+    "type": "os",
+    "key": " DISTRO",
+    "keyColor": "#e64553"
+    },
+    {
+    "type": "kernel",
+    "key": "│ ├",
+    "keyColor": "#e64553"
+    },
+    {
+    "type": "packages",
+    "key": "│ ├󰏖",
+    "keyColor": "#e64553"
+    },
+    {
+    "type": "uptime",
+    "key": "│ ├󰅐",
+    "keyColor": "#e64553"
+    },
+    {
+    "type": "shell",
+    "key": "│ └",
+    "keyColor": "#e64553"
+    },
+    {
+    "type": "wm",
+    "key": " WM",
+    "keyColor": "#a6da95"
+    },
+
+ {
+    "type": "wmtheme",
+    "key": "│ ├󰉼 ",
+    "keyColor": "#a6da95",
+  },
+  {
+    "type": "icons",
+    "key": "│ ├󰀻",
+    "keyColor": "#a6da95",
+  },
+  {
+        "type": "cursor",
+        "key": "│ ├󰆿",
+        "keyColor": "#a6da95",
+    },
+    {
+        "type": "terminalfont",
+        "key": "│ ├",
+        "keyColor": "#a6da95",
+    },
+    {
+    "type": "terminal",
+    "key": "│ └",
+    "keyColor": "#a6da95"
+    },
+    {
+    "type": "host",
+    "key": "󰌢 SYSTEM",
+    "keyColor": "#89b4fa"
+    },
+    {
+    "type": "cpu",
+    "key": "│ ├",
+    "keyColor": "#89b4fa"
+    },
+    {
+    "type": "gpu",
+    "key": "│ ├󰢮",
+    "format": "{2}",
+    "keyColor": "#89b4fa"
+    },
+   // {
+     //       "type": "display",
+    //"key": "│ ├󰍹",
+   // "keyColor": "#89b4fa",
+   // "compactType": "original-with-refresh-rate"
+   // },
+    {
+    "type": "memory",
+    "key": "│ ├",
+    "keyColor": "#89b4fa"
+    },
+    {
+    "type": "swap",
+    "key": "│ ├󰿡",
+    "keyColor": "#89b4fa"
+    },
+      {
+    "type": "disk",
+    "key": "│ ├󰋊",
+    "keyColor": "#89b4fa",
+  },
+
+    {
+    "type": "display",
+    "key": "│ └󰹑",
+    "keyColor": "#89b4fa"
+    },
+    {
+    "type":"battery"
+    },
+
+    {
+    "type": "custom",
+     // A more colorful, balanced dot array for the bottom
+
+      "format": "\u001b[38;2;243;139;168m󰮯 - \u001b[38;2;235;160;172m󰮯 - \u001b[38;2;250;179;135m󰮯 - \u001b[38;2;249;226;175m󰮯 - \u001b[38;2;166;227;161m󰮯 - \u001b[38;2;148;226;213m󰮯 - \u001b[38;2;137;220;235m󰮯 - \u001b[38;2;116;199;236m󰮯 - \u001b[38;2;137;180;250m󰮯 - \u001b[38;2;180;190;254m󰮯 - \u001b[38;2;203;166;247m󰮯 - \u001b[38;2;245;194;231m󰮯 - \u001b[38;2;242;205;205m󰮯 - \u001b[38;2;245;224;220m󰮯  \u001b[0m"
+    },
+    "break",
+    ]
+}
