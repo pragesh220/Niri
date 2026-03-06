@@ -18,6 +18,7 @@ PACMAN_PACKAGES=(
   base-devel
   vlc
   wezterm
+  qbittorrent 
 )
 
 echo "Installing pacman packages..."
