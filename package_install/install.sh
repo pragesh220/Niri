@@ -16,6 +16,7 @@ PACMAN_PACKAGES=(
   btop
   fastfetch
   base-devel
+  vlc
 )
 
 echo "Installing pacman packages..."
