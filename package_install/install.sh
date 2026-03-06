@@ -17,6 +17,7 @@ PACMAN_PACKAGES=(
   fastfetch
   base-devel
   vlc
+  wezterm
 )
 
 echo "Installing pacman packages..."
