@@ -1,0 +1,15 @@
+[color]
+
+# Flame Gradient: Dark Red (Bottom) to Bright Cream (Top)
+gradient = 1
+gradient_count = 8
+
+# Reverse order for flame effect
+gradient_color_1 = '#ea6962' # Red (Bottom)
+gradient_color_2 = '#e78a4e' # Orange
+gradient_color_3 = '#d8a657' # Yellow
+gradient_color_4 = '#a9b665' # Green (Transition)
+gradient_color_5 = '#89b482' # Aqua
+gradient_color_6 = '#7daea3' # Blue
+gradient_color_7 = '#d3869b' # Purple
+gradient_color_8 = '#ebdbb2' # Foreground/Cream (Top Tip)
