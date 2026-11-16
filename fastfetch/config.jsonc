@@ -14,7 +14,8 @@
       "4": "#b16286",
       "5": "#cc241d",
       "6": "#d65d0e"
-},   
+},
+
 
   },
 
@@ -62,15 +63,20 @@
       "keyColor": "red"
     },
 
-    {
-      "type": "memory",
-      "key": "│ ├ ",
-      "keyColor": "red"
-    },
-
+        {
+            "type": "memory",
+            "key": "│ ├ ",
+            "keyColor": "red",
+	    "percent": {
+		"type": 3,
+		"green": 30,
+		"yellow": 70,
+		"red": 90
+		}
+        },
     {
       "type": "swap",
-      "key": "└ └󰿢 ",
+      "key": "│ └󰿢 ",
       "keyColor": "red"
     },
 
@@ -78,7 +84,7 @@
       "type": "custom",
       "format": "\u001b[31m└────────────────────────────────────────────────────┘\u001b[0m"
     },
-    
+
     // --- SOFTWARE (Green) ---
     {
       "type": "custom",
@@ -142,7 +148,7 @@
 
     {
       "type": "terminalfont",
-      "key": "└ └ ",
+      "key": "│ └ ",
       "keyColor": "green"
     },
 
@@ -150,7 +156,7 @@
       "type": "custom",
       "format": "\u001b[32m└────────────────────────────────────────────────────┘\u001b[0m"
     },
-    
+
     // --- AGE / UPTIME / UPDATE (Blue) ---
     {
       "type": "custom",
