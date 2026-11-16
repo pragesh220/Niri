@@ -4,10 +4,22 @@
     environment {
         ELECTRON_OZONE_PLATFORM_HINT "auto"
         QT_QPA_PLATFORM "wayland"
-        QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-        XDG_SESSION_TYPE "wayland"
-        XDG_CURRENT_DESKTOP "niri"
         QT_QPA_PLATFORMTHEME "gtk3"
+        QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+        XDG_CURRENT_DESKTOP "niri"
+        XDG_SESSION_TYPE "wayland"
+    }
+
+//    cursor {
+//        xcursor-theme "capitaine-cursors"
+//        xcursor-size 24
+//    }
+
+    blur {
+        passes 3        // more passes = stronger blur (default: 3)
+        offset 3.0      // sample distance per pass (default: 3.0)
+        noise 0.02      // grain overlay (default: 0.02)
+        saturation 1.4  // color saturation boost (default: 1.5)
     }
 
     debug {
@@ -18,6 +30,3 @@
     hotkey-overlay {
        skip-at-startup
     }
-    xwayland-satellite {
-    // This allows Niri to automatically manage XWayland through the satellite binary
-}

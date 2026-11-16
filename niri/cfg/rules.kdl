@@ -1,28 +1,54 @@
+    window-rule {
+        geometry-corner-radius 10 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    window-rule {
+        background-effect {
+          blur true
+          xray true
+        }
+    }
+
+    // Floating Noctalia settings window.
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
+    }
+
+    // if you use steam you will probably like these
+    window-rule {
+        match app-id="steam"
+        exclude title=r#"^[Ss]team$"#
+        open-floating true
+    }
+
+    window-rule {
+       match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+       default-floating-position x=10 y=10 relative-to="bottom-right"
+       open-focused false
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper"
+        place-within-backdrop true
+    }
+
+    layer-rule {
+        match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+        background-effect {
+          xray false
+          // blur false
+        }
+    }
+// Focused Kitty
 window-rule {
-  geometry-corner-radius 5 // Set every window radius to 20
-  clip-to-geometry true
-}
-layer-rule {
-  match namespace="^noctalia-wallpaper*"
-  place-within-backdrop true
-}
-// Focused Nemo
-window-rule {
-    match app-id=r#"^nemo$"#
+    match app-id=r#"kitty"#
     opacity 0.90
 }
-// Unfocused Nemo (Dimmed)
 window-rule {
-    match app-id=r#"^nemo$"# is-focused=false
-    opacity 0.90
-}
-// Focused Ghostty
-window-rule {
-    match app-id=r#"^com\.mitchellh\.ghostty$"#
-    opacity 0.90
-}
-// Unfocused Ghostty (Dimmed)
-window-rule {
-    match app-id=r#"^com\.mitchellh\.ghostty$"# is-focused=false
-    opacity 0.90
+    match app-id="thunar"
+    opacity 0.85
 }
